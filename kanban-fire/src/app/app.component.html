@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <mat-icon>
+    local_fire_department
+  </mat-icon>
+  <span>Kanban Fire</span>
+</mat-toolbar>
+
+<div class="container-wrapper">
+  <mat-card cdkDropList  class="list">
+    <mat-card *ngFor="let item of todo">{{item}}
+    </mat-card>
+  </mat-card>
+  
+  <mat-card cdkDropList  class="list">
+    <mat-card *ngFor="let item of inProgress">{{item}}
+    </mat-card>
+  </mat-card> 
+  
+  <mat-card cdkDropList  class="list">
+    <mat-card *ngFor="let item of done">{{item}}
+    </mat-card>
+  </mat-card>
+</div>
+
+
